@@ -57,6 +57,9 @@
 
 .fa-clock {
   font-size: 80px;
+  vertical-align: 100%; // top
+  vertical-align: 50%; // middle
+  vertical-align: 0%; // bottom
 }
 
 .fa-euro-sign {
