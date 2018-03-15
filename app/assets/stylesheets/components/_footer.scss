@@ -1,38 +1,39 @@
 .footer {
-  right: 0;
-  bottom: 0;
-  left: 0;
-  top: 0;
-  background: $light-gray;
+  background: $green;
   display: flex;
   text-align: center;
   justify-content: center;
-  height: 63px;
+  height: 180px;
   color: rgba(0,0,0,0.3);
+  padding-top: 40px;
 }
 
 .footer-links {
   display: flex;
   align-items: center;
 }
+
 .footer-links a {
-  color: $green;
+  color: $white;
   opacity: 0.15;
   text-decoration: none;
-  font-size: 22px;
   padding: 0px 10px;
 }
 .footer-links a:hover {
   opacity: 1;
+  color: $light-gray
 }
-.footer .fa-heart {
-  color: $green;
+.footer .fa-facebook-f {
+  color: $white;
   padding-left: 3px;
-  padding-right: 3px;
-  padding-top: 3px;
+  padding-right: 53px;
+  font-size: 35px;
 }
 
-.footer-text {
-  padding-top: 17px;
-  font-size: 16px;
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
 }

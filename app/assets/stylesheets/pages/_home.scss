@@ -2,7 +2,7 @@
 
 .banner {
   text-align: center;
-  height: 83vh;
+  height: 400px;
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
   background-size: cover !important;
   background-position: center;
@@ -24,5 +24,56 @@
   color: $white;
   opacity: 0.6;
 }
+
+.flex-container-lg {
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+  height: 300px;
+}
+
+
+.flex-container-md {
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+  height: 260px;
+}
+
+.flex-container-sm {
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+  height: 40px;
+}
+
+.background-green {
+  background-color: $green;
+}
+
+.background-white {
+  background-color: $white;
+}
+
+.fa-clock {
+  font-size: 100px;
+}
+
+.fa-euro-sign {
+  font-size: 100px;
+}
+
+.fa-calendar-alt {
+  font-size: 100px;
+}
+
+.fa-mouse-pointer {
+  font-size: 100px;
+}
+
+.fa-paper-plane {
+  font-size: 100px;
+}
+
 
 
