@@ -2,7 +2,7 @@
 
 .banner {
   text-align: center;
-  height: 400px;
+  height: 680px;
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
   background-size: cover !important;
   background-position: center;
@@ -56,24 +56,28 @@
 }
 
 .fa-clock {
-  font-size: 100px;
+  font-size: 80px;
+  vertical-align: 100%; // top
+  vertical-align: 50%; // middle
+  vertical-align: 0%; // bottom
 }
 
 .fa-euro-sign {
-  font-size: 100px;
+  font-size: 80px;
 }
 
 .fa-calendar-alt {
-  font-size: 100px;
+  font-size: 80px;
 }
 
 .fa-mouse-pointer {
-  font-size: 100px;
+  font-size: 80px;
 }
 
 .fa-paper-plane {
-  font-size: 100px;
+  font-size: 80px;
 }
 
-
-
+.vertical-align {
+  text-align: vertical-align
+}
