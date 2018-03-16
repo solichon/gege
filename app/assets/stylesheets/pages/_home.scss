@@ -2,10 +2,11 @@
 
 .banner {
   text-align: center;
-  height: 680px;
+  height: 660px;
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
   background-size: cover !important;
   background-position: center;
+  background-color: $green;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -13,15 +14,15 @@
 }
 
 .banner h1 {
-  font-size: 50px;
+  font-size: 3px;
   font-weight: bold;
-  color: $white;
+  color: $green;
   text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
 }
 .banner p {
-  font-size: 23px;
+  font-size: 3px;
   font-weight: lighter;
-  color: $white;
+  color: $green;
   opacity: 0.6;
 }
 
@@ -32,6 +33,9 @@
   height: 300px;
 }
 
+.flex-container-lg h4 {
+  font-size: 20px;
+}
 
 .flex-container-md {
   align-items: center;
@@ -55,29 +59,39 @@
   background-color: $white;
 }
 
+.background-gray {
+  background-color: $gray;
+}
+
 .fa-clock {
   font-size: 80px;
-  vertical-align: 100%; // top
-  vertical-align: 50%; // middle
-  vertical-align: 0%; // bottom
+  padding-bottom: 10px;
 }
 
 .fa-euro-sign {
   font-size: 80px;
+  padding-bottom: 10px;
 }
 
 .fa-calendar-alt {
   font-size: 80px;
+  padding-bottom: 10px;
 }
 
 .fa-mouse-pointer {
   font-size: 80px;
+  padding-bottom: 10px;
 }
 
 .fa-paper-plane {
   font-size: 80px;
+  padding-bottom: 10px;
 }
 
 .vertical-align {
-  text-align: vertical-align
+  text-align: vertical-align;
+}
+
+.text-center {
+  content: justify;
 }
