@@ -1,11 +1,13 @@
 .footer {
-  background: $green;
+  // background: $white;
+  background: url('images/cover.jpg') no-repeat;
   display: flex;
   text-align: center;
   justify-content: center;
-  height: 150px;
+  height: 120px;
   color: rgba(0,0,0,0.3);
   padding-top: 20px;
+  background-size: cover;
 }
 
 .footer-links {
@@ -14,7 +16,7 @@
 }
 
 .footer-links a {
-  color: $white;
+  color: $gray;
   opacity: 0.15;
   text-decoration: none;
   padding: 0px 10px;
@@ -24,10 +26,24 @@
   color: $light-gray
 }
 .footer .fa-facebook-f {
-  color: $white;
-  padding-left: 3px;
-  padding-right: 53px;
+  color: $green;
   font-size: 35px;
+  padding-right:25px;
+}
+
+.footer .fa-envelope {
+  color: $green;
+  font-size: 35px;
+  padding-left: 30px;
+}
+
+.footer h6 {
+  color: #999999;
+  font-size: 15px;
+}
+
+.footer h4 {
+  color: $green;
 }
 
 .text-left {

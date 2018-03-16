@@ -23,7 +23,20 @@
     background-color: $green;
     padding: 15px 24px 15px;
     margin: 0;
-    margin-top: 8px;
+    // margin-top: 8px;
+    margin-bottom: 12px;
+    border-radius: 5px;
+}
+
+.btn-secondary-banner {
+    // background-color:hsl(208, 100%, 100%);
+    color: $white;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: $red;
+    padding: 15px 24px 15px;
+    margin: 0;
+    // margin-top: 8px;
     margin-bottom: 12px;
     border-radius: 5px;
 }
