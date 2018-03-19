@@ -8,7 +8,7 @@ ActiveAdmin.register User do
     column :email
     column :phone_number
     column :created_at
-    column :admin
+    column :test
     actions
   end
 end

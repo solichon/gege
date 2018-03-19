@@ -2,18 +2,18 @@
 
 
 <!-- Mobile view -->
-  <div class="banner-content hidden-md hidden-lg">
-    <h2 class="mb0 text-white">Gère les</h2>
-    <h2 class="mb0 text-white mt0">réservations clients</h2>
-    <h2 class="text-white mt0">à votre place</h2>
-    <%= link_to "Je teste", new_user_session_path, class: "btn btn-secondary-banner" %>
+  <div class="banner-content hidden-md hidden-lg mt+ ">
+    <h3 class="mb0 text-white">Gère les</h3>
+    <h3 class="mb0 text-white mt0">réservations clients</h3>
+    <h3 class="text-white mt0">à votre place</h3>
+    <%= link_to "Je teste", new_user_registration_path, class: "btn btn-secondary-banner" %>
   </div>
 
   <!-- Laptop view -->
-  <div class="banner-content hidden-xs hidden-sm">
+  <div class="banner-content hidden-xs hidden-sm ">
     <%= cl_video_tag("Gégé_Video", :video_codec=>"auto", :width=>960, :crop=>"scale", :autoplay=>true) %>
     <p>Gère les réservations clients à votre place</p>
-    <%= link_to "Je teste gratuitement pendant 1 mois", new_user_session_path, class: "btn btn-secondary-banner" %>
+    <%= link_to "Je teste gratuitement pendant 1 mois", new_user_registration_path, class: "btn btn-secondary-banner" %>
   </div>
 </div>
 
