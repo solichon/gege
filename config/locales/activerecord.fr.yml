@@ -30,6 +30,8 @@ fr:
           archived: Archivée
       user:
         email: E-mail
+        company_name: Nom de la Société
+        phone_number: Numéro de téléphone
       timeslot:
         statuses:
           empty: Aucune Réservation

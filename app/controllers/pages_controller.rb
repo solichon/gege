@@ -3,7 +3,11 @@ class PagesController < ApplicationController
 
   def home
     if current_user
-      redirect_to timeslots_path
+      if current_user.test == true || current_user.admin == true
+        redirect_to timeslots_path
+      else
+        redirect_to about_path
+      end
     end
   end
 end
