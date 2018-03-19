@@ -10,17 +10,4 @@ class PagesController < ApplicationController
       end
     end
   end
-  # def home
-  #   if current_user && @user.test = true
-  #     redirect_to timeslots_path
-  #   elsif current_user && @user.test = false
-  #     redirect_to activities_path
-  #   end
-  # end
-
-  # def home
-  #   if current_user
-  #     redirect_to timeslots_path
-  #   end
-  # end
 end
