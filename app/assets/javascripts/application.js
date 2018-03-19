@@ -1,2 +1,8 @@
+//= require jquery
+//= require jquery_ujs
+
 //= require rails-ujs
-//= require_tree .
+
+//= require ./cable.js
+//= require ./print.js
+//= require ./active_admin.js

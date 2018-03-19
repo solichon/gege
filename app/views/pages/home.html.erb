@@ -11,7 +11,7 @@
 
   <!-- Laptop view -->
   <div class="banner-content hidden-xs hidden-sm">
-    <%= cl_video_tag("Gégé_Video", :video_codec=>"auto", :width=>960, :crop=>"scale") %>
+    <%= cl_video_tag("Gégé_Video", :video_codec=>"auto", :width=>960, :crop=>"scale", :autoplay=>true) %>
     <p>Gère les réservations clients à votre place</p>
     <%= link_to "Je teste gratuitement pendant 1 mois", new_user_session_path, class: "btn btn-secondary-banner" %>
   </div>
