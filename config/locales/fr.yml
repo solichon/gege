@@ -4,7 +4,6 @@ fr:
       profile: 'Profil'
       settings: 'Paramètres'
       sign_out: 'Se déconnecter'
-      sign_up: 'Je teste'
 
   date:
     abbr_day_names:
