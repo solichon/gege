@@ -145,38 +145,49 @@ Booking.destroy_all
 Timeslot.destroy_all
 Activity.destroy_all
 Client.destroy_all
-# User.destroy_all # deleted for prod
+User.destroy_all # deleted for prod
 puts "DB cleaned - appart from users"
 
 # # USERS # Commented because users not deleted anymore
 
- test = User.first
- math = User.last
+ # test = User.first
+ # math = User.last
 
-# puts "Creating users seeds"
-# test = User.create!(
-#   company_name: "Company",
-#   SIRET: "12345678901234",
-#   first_name: "First",
-#   last_name: "Last",
-#   phone_number: "+33 6 11 22 33 44",
-#   email: "user@example.com",
-#   password: "password",
-#   website: "www.website.com"
-#   )
-# puts "done user test"
+puts "Creating admin-users seeds"
+cece = User.create!(
+  company_name: "Gégé",
+  SIRET: "12345678901234",
+  first_name: "Céline",
+  last_name: "Pernod",
+  phone_number: "+33 7 68 01 42 17",
+  email: "celine@gege.io",
+  password: "lewagon",
+  admin: true
+  )
 
-# math = User.create!(
-#   company_name: "Math Kite Marseille",
-#   SIRET: "12345678901234",
-#   first_name: "Math",
-#   last_name: "Bonfils",
-#   phone_number: "06 16 74 18 21",
-#   email: "math@kite-marseille.com",
-#   password: "password",
-#   website: "www.math-kite-marseille.com"
-#   )
-# puts "done user math"
+sam = User.create!(
+  company_name: "Gégé",
+  SIRET: "12345678901234",
+  first_name: "Samuel",
+  last_name: "Olichon",
+  phone_number: "+33 7 69 10 10 94",
+  email: "samuel@gege.io",
+  password: "lewagon",
+  admin: true
+
+puts "done admin-user"
+
+math = User.create!(
+  company_name: "Math Kite Marseille",
+  SIRET: "12345678901245",
+  first_name: "Math",
+  last_name: "Bonpere",
+  phone_number: "+33 6 16 74 18 21",
+  email: "math@kite-marseille.com",
+  password: "password",
+  website: "www.math-kite-marseille.com"
+  )
+puts "done user math"
 
 
 # ACTIVITIES
