@@ -174,7 +174,7 @@ sam = User.create!(
   email: "samuel@gege.io",
   password: "lewagon",
   admin: true
-
+  )
 puts "done admin-user"
 
 math = User.create!(

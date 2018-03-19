@@ -29,9 +29,12 @@ gem 'devise-i18n-views'
 
 gem 'activeadmin'
 gem 'inherited_resources'
+gem 'postmark-rails'
+
 
 group :development do
   gem 'web-console', '>= 3.3.0'
+  gem "letter_opener"
 end
 
 group :development, :test do
