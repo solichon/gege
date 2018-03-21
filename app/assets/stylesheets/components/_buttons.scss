@@ -74,6 +74,18 @@
     text-decoration: none
 }
 
+.btn-recall {
+    color: $green ;
+    font-size: 20px;
+    font-weight: 700;
+    border: 2px solid $green;
+    background-color: white;
+    border-radius: 5px;
+
+    margin: 0;
+    margin-bottom: 12px;
+}
+
 .checkbox-toggle-wrap {
     width: 60px;
 }
