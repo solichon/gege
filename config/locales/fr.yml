@@ -109,6 +109,7 @@ fr:
   errors:
     format: "%{attribute} %{message}"
     messages:
+      minimum_password_length: 6 caractères minimum
       accepted: doit être accepté(e)
       blank: doit être rempli(e)
       present: doit être vide
