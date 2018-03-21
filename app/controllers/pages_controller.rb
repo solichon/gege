@@ -7,7 +7,7 @@ class PagesController < ApplicationController
       if current_user.test == true || current_user.admin == true
         redirect_to timeslots_path
       else
-        redirect_to activities_path
+        redirect_to timeslots_path
       end
     end
   end

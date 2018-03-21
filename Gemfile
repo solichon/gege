@@ -30,6 +30,7 @@ gem 'devise-i18n-views'
 gem 'activeadmin'
 gem 'inherited_resources'
 gem 'postmark-rails'
+gem 'pundit'
 
 
 group :development do
