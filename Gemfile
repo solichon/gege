@@ -31,6 +31,7 @@ gem 'activeadmin'
 gem 'inherited_resources'
 gem 'postmark-rails'
 gem 'pundit'
+# gem 'google-api-client', '~> 0.11'
 
 
 group :development do
