@@ -155,6 +155,7 @@ puts "DB cleaned - appart from users"
 
 puts "Creating admin-users seeds"
 cece = User.create!(
+  id: 1,
   company_name: "Gégé",
   SIRET: "12345678901234",
   first_name: "Céline",
@@ -162,10 +163,12 @@ cece = User.create!(
   phone_number: "+33 7 68 01 42 17",
   email: "celine@gege.io",
   password: "lewagon",
-  admin: true
+  admin: true,
+  test: true
   )
 
 sam = User.create!(
+  id: 2,
   company_name: "Gégé",
   SIRET: "12345678901234",
   first_name: "Samuel",
@@ -173,11 +176,13 @@ sam = User.create!(
   phone_number: "+33 7 69 10 10 94",
   email: "samuel@gege.io",
   password: "lewagon",
-  admin: true
+  admin: true,
+  test: true
   )
 puts "done admin-user"
 
 math = User.create!(
+  id: 3,
   company_name: "Math Kite Marseille",
   SIRET: "12345678901245",
   first_name: "Math",
@@ -185,7 +190,9 @@ math = User.create!(
   phone_number: "+33 6 16 74 18 21",
   email: "math@kite-marseille.com",
   password: "password",
-  website: "www.math-kite-marseille.com"
+  website: "www.math-kite-marseille.com",
+  admin: true,
+  test: true
   )
 puts "done user math"
 
@@ -193,7 +200,7 @@ puts "done user math"
 # ACTIVITIES
 
 puts "Creating activities seeds on math user"
-initiation = Activity.new(
+initiation = Activity.create!(
   title: "Initiation",
   description: "Découvrez les plaisirs de la glisse en Kite à Marseille",
   capacity: 4,
@@ -202,12 +209,13 @@ initiation = Activity.new(
   status: 0,
   adult_price: 90,
   child_price: 70,
-  user: math,
+  user_id: 3,
   image: File.new(File.join(__dir__, "../app/assets/images/initiation.jpg"))
   )
-initiation.save!
 
-perfectionnement = Activity.new(
+
+puts "Creating activities seeds on math user2"
+perfectionnement = Activity.create!(
   title: "Perfectionnement",
   description: "Envie faire un bon dans votre technique ? Ce cours est fait pour vous !",
   capacity: 2,
@@ -216,12 +224,11 @@ perfectionnement = Activity.new(
   status: 0,
   adult_price: 90,
   child_price: 70,
-  user: math,
+  user_id: 3,
   image: File.new(File.join(__dir__, "../app/assets/images/perfectionnement.jpg"))
   )
-perfectionnement.save!
 
-cours_particuliers = Activity.new(
+cours_particuliers = Activity.create!(
   title: "Cours Particuliers",
   description: "Développez votre style sur notre magnifique spot marseillais.",
   capacity: 1,
@@ -230,10 +237,9 @@ cours_particuliers = Activity.new(
   status: 0,
   adult_price: 120,
   child_price: 100,
-  user: math,
+  user_id: 3,
   image: File.new(File.join(__dir__, "../app/assets/images/cours_particuliers.jpg"))
   )
-cours_particuliers.save!
 
 puts "done activity seeds"
 
