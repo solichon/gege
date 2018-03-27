@@ -15,7 +15,8 @@ class ActivityPolicy < ApplicationPolicy
   end
 
   def create?
-    user.test || user.admin
+    user_is_test_or_admin
+
   end
 
   # def update?

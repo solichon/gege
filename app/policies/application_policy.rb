@@ -50,4 +50,10 @@ class ApplicationPolicy
       scope
     end
   end
+
+  private
+
+  def user_is_test_or_admin
+    user.test || user.admin
+  end
 end
