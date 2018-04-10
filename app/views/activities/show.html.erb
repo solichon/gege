@@ -44,22 +44,26 @@
       </div>
 
       <div class="row">
-        <div class="col-xs-4">
+        <div class="col-xs-3 mb">
           <div class="text-center">
               <br>
               <%= link_to "+ créneau", new_timeslot_path, class: "btn btn-primary" %>
           </div>
         </div>
-        <div class="col-xs-4">
+        <div class="col-xs-3 mb">
           <div class="text-center">
               <br>
               <%= link_to "Modifier", edit_activity_path(@activity), class: "btn btn-primary" %>
           </div>
         </div>
-        <div class="col-xs-3">
+        <div class="col-xs-3 mb">
           <div class="text-center">
-              <br>
-              <%= link_to "Retour", :back, class: "btn btn-primary" %>
+            <%= link_to "Supprimer", activity_path(@activity), method: :delete, data: {confirm: "Êtes-vous certain de vouloir supprimer?"}, class: "btn btn-primary" %>
+          </div>
+        </div>
+        <div class="col-xs-3 mb">
+          <div class="text-center">
+              <%= link_to "Retour", activities_path, class: "btn btn-primary" %>
           </div>
         </div>
       </div>

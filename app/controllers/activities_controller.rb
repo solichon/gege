@@ -17,7 +17,6 @@ class ActivitiesController < ApplicationController
     end
   end
 
-
   def show
     @activity = Activity.find(params[:id])
     authorize @activity
@@ -40,6 +39,13 @@ class ActivitiesController < ApplicationController
     else
       render :edit
     end
+  end
+  
+  def destroy
+    @activity = Activity.find(params[:id])
+    @activity.destroy
+    authorize @activity
+    redirect_to activities_path
   end
 
   private
