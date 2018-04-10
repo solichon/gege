@@ -17,7 +17,6 @@ class ActivitiesController < ApplicationController
     end
   end
 
-
   def show
     @activity = Activity.find(params[:id])
     authorize @activity
@@ -27,6 +26,21 @@ class ActivitiesController < ApplicationController
     @activities = policy_scope(Activity)
   end
 
+  def edit
+    @activity = Activity.find(params[:id])
+    authorize @activity
+  end
+
+  def update
+    @activity = Activity.find(params[:id])
+    authorize @activity
+    if @activity.update(activity_params)
+      redirect_to activity_path(@activity)
+    else
+      render :edit
+    end
+  end
+  
   def destroy
     @activity = Activity.find(params[:id])
     @activity.destroy
