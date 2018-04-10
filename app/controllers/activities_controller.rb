@@ -27,6 +27,13 @@ class ActivitiesController < ApplicationController
     @activities = policy_scope(Activity)
   end
 
+  def destroy
+    @activity = Activity.find(params[:id])
+    @activity.destroy
+    authorize @activity
+    redirect_to activities_path
+  end
+
   private
 
   # Never trust parameters from the scary internet, only allow the white list through.

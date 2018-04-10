@@ -25,7 +25,7 @@ class ActivityPolicy < ApplicationPolicy
   # # - user:   the `current_user` signed in with Devise.
   # end
 
-  # def destroy?
-  #   record.user == user.test || user.admin
-  # end
+  def destroy?
+    record.user == user.test || user.admin
+  end
 end

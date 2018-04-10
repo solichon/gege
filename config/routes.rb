@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   get "home", to: "pages#home"
   get "about", to: "pages#about"
 
-  resources :activities, only: [ :index, :show, :new, :create ]
+  resources :activities, only: [ :index, :show, :new, :create, :destroy ]
   resources :timeslots, only: [ :index, :show, :new, :create ] do
     resources :bookings, only: [ :new, :create ]
   end
