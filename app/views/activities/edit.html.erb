@@ -1,0 +1,35 @@
+<div class="row">
+  <h3 class="text-center text-green mb">Je vous modifie votre activité ?</h3>
+  <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3">
+    <div class="row">
+      <div class="col-xs-12">
+        <%= simple_form_for @activity do |f| %>
+          <%= f.error_notification %>
+          <%= f.input :title, required: true, label: 'Titre' %>
+          <%= f.input :description, required: true %>
+          <%= f.input :duration_in_minutes, required: true, label: 'Durée (en minutes)' %>
+          <%= f.input :meeting_point, required: false, label: 'Lieu du RDV' %>
+          <%= f.input :capacity, required: true, label: 'Capacité (en personne)' %>
+      </div>
+      <div class="col-xs-6">
+        <%= f.input :adult_price_cents, required: true, label: 'Prix TTC adulte'%>
+      </div>
+      <div class="col-xs-6">
+          <%= f.input :child_price_cents, required: true, label: 'Prix TTC enfant'%>
+      </div>
+      <div class="col-xs-12">
+          <%= f.input :image, label: 'Photo' %>
+          <%= f.input :image_cache, as: :hidden %>
+      </div>
+      <div class="row">
+        <div class="col-xs-4 col-xs-offset-3 mt">
+          <%= f.submit "Valider", class: "btn btn-primary" %>
+          <% end %>
+        </div>
+        <div class="col-xs-4 mt">
+          <%= link_to "Annuler", activity_path(@activity), class: "btn btn-primary" %>
+        </div>
+      </div>
+     </div>
+  </div>
+</div>

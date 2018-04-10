@@ -27,6 +27,21 @@ class ActivitiesController < ApplicationController
     @activities = policy_scope(Activity)
   end
 
+  def edit
+    @activity = Activity.find(params[:id])
+    authorize @activity
+  end
+
+  def update
+    @activity = Activity.find(params[:id])
+    authorize @activity
+    if @activity.update(activity_params)
+      redirect_to activity_path(@activity)
+    else
+      render :edit
+    end
+  end
+
   private
 
   # Never trust parameters from the scary internet, only allow the white list through.
