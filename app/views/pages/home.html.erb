@@ -1,31 +1,18 @@
-<div class="banner ">
-
-<!-- Mobile view -->
-  <div class="banner-content hidden-md hidden-lg mt0 ">
-    <h2 class="mb0 text-white">Gère les</h3>
-    <h2 class="mb0 text-white mt--">réservations clients</h3>
-    <h2 class="text-white mt-- mb+">à votre place</h3>
-
-    <iframe width="360" height="203" src="https://www.youtube.com/embed/evn3opttcRk?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    <%= link_to "Je teste", new_user_registration_path, class: "mt+ btn btn-secondary-banner" %>
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,0,50,0.6) 0%, rgba(0,36,61,0.4) 50%), url(https://images.unsplash.com/photo-1423666639041-f56000c27a9a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4a22760c81fd9c0b6609693539bdd1c3&auto=format&fit=crop&w=1053&q=80);">
+<!-- Mobie view -->
+  <div class="banner-content hidden-md hidden-lg">
+    <h2 class="mb0 text-white">Gère les</h2>
+    <h2 class="mb0 text-white mt0">réservations clients</h2>
+    <h2 class="text-white mt0">à votre place</h2>
+    <%= link_to "Je teste", new_user_session_path, class: "btn btn-secondary" %>
   </div>
 
-  <!-- Laptop view -->
-  <div class="banner-content hidden-xs hidden-sm ">
-    <iframe width="960" height="540" src="https://www.youtube.com/embed/evn3opttcRk?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    <p>Gère les réservations clients à votre place</p>
-    <%= link_to "Je teste gratuitement pendant 1 mois", new_user_registration_path, class: "btn btn-secondary-banner" %>
+<!-- Laptop view -->
+  <div class="banner-content hidden-xs hidden-sm">
+    <h1>Gère les réservations clients à votre place</h1>
+    <%= link_to "Je teste", new_user_session_path, class: "btn btn-secondary" %>
   </div>
 </div>
 
-<div class="flex-container-lg background-white text-green text-center">
-  <div><i class="far fa-clock"></i><h4>Gagnez du temps</h4></div>
-  <div><i class="fas fa-euro-sign"></i><h4>Optimisez vos revenus</h4></div>
-</div>
 
-<div class="flex-container-lg background-green text-white text-center">
-  <div><i class="far fa-calendar-alt"></i><h4>Planning centralisé</h4></div>
-  <div><i class="fas fa-mouse-pointer"></i><h4>Réservation en ligne</h4></div>
-  <div><i class="fas fa-paper-plane"></i><h4>Gestion multi-plateformes</h4></div>
-</div>
 
