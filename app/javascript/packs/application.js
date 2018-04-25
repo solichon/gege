@@ -34,6 +34,7 @@ $(document).ready(function() {
     aspectRatio: 1, //ration height vs. width (don't work)
     minTime: '09:00:00',
     maxTime: '18:00:00',
+    selectable: true,
     allDaySlot: false,
     nowIndicator: true,
     displayEventTime: false,
@@ -47,6 +48,9 @@ $(document).ready(function() {
           window.print();
         }
       }
+    },
+    select: function(startDate, endDate) {
+      window.location.href = "/timeslots/new.html"
     },
     // eventClick: function(calEvent, jsEvent, view) {
     //   debugger;
