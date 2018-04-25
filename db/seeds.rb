@@ -188,10 +188,10 @@ math = User.create!(
   first_name: "Math",
   last_name: "Bonpere",
   phone_number: "+33 6 16 74 18 21",
-  email: "math@kite-marseille.com",
+  email: "hello@gege.io",
   password: "password",
   website: "www.math-kite-marseille.com",
-  admin: true,
+  admin: false,
   test: true
   )
 puts "done user math"
