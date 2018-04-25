@@ -6,3 +6,4 @@
 //= require ./cable.js
 //= require ./print.js
 //= require ./active_admin.js
+

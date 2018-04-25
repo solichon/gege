@@ -6,10 +6,32 @@ import $ from 'jquery';
 
 import 'fullcalendar';
 import 'fullcalendar/dist/fullcalendar.css';
-import 'fullcalendar/dist/locale/fr.js'
-// import 'fullcalendar/lang/fr.js';
+import 'fullcalendar/dist/locale/fr.js';
 
+import flatpickr from 'flatpickr';
+import "flatpickr/dist/themes/material_green.css"; // Note this is important!
+import confirmDatePlugin from 'flatpickr/dist/plugins/confirmDate/confirmDate' ;
+import 'flatpickr/dist/plugins/confirmDate/confirmDate.css' ;
+import { French } from "flatpickr/dist/l10n/fr.js";
+flatpickr.localize(French) // default locale is now French'
 
+//DatePicker used on Timeslot/new
+
+flatpickr(".datepicker", {
+    enableTime: true,
+    altInput: true,
+    altFormat: "j F Y H:i",
+    dateFormat: "d-m-Y H:i",
+    time_24hr: true,
+    plugins: [new confirmDatePlugin()],
+    locale: "french",
+    confirmIcon: "<i class='fa fa-check'></i>", // your icon's html, if you wish to override
+    confirmText: "OK ",
+    showAlways: true,
+    theme: "light"
+}),
+
+//Fullcalendar used on Timeslot/Index.
 
 $(document).ready(function() {
   $('.selectpicker').selectpicker();
@@ -32,8 +54,8 @@ $(document).ready(function() {
     height: 100,
     contentHeight: 520,  //size height
     aspectRatio: 1, //ration height vs. width (don't work)
-    minTime: '09:00:00',
-    maxTime: '18:00:00',
+    minTime: '10:00:00',
+    maxTime: '19:00:00',
     selectable: true,
     allDaySlot: false,
     nowIndicator: true,
