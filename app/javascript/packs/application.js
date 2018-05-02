@@ -71,8 +71,15 @@ $(document).ready(function() {
         }
       }
     },
-    select: function(startDate, endDate) {
+    select: function(start, end) {
       window.location.href = "/timeslots/new.html"
+      // $.ajax({
+      //   url: '/timeslots/new.html',
+      //   type: 'POST',
+      //   data: {
+      //     start: eventObj.start
+      //   },
+      // });
     },
     // eventClick: function(calEvent, jsEvent, view) {
     //   debugger;

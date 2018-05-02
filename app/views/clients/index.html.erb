@@ -1,0 +1,56 @@
+<div class="row">
+
+<!-- Mobie view -->
+  <div class="hidden-md hidden-lg">
+  <h3 class="text-center text-green mb0">Vos clients</h3>
+  </div>
+
+<!-- Laptop view -->
+  <div class="hidden-xs hidden-sm">
+  <h3 class="text-center text-green mb-">Vos clients</h3>
+  </div>
+
+  <div>
+    <div class="flex-container">
+
+      <div class="h4">
+          <span>
+            <a id="button-print" class="glyphicon glyphicon-print pull-left ml-- mr hidden-xs"></a>
+          </span>
+      </div>
+    </div>
+    <br>
+  </div>
+  <div>
+    <div class="panel panel-default">
+      <div class="table-responsive">
+        <table class="table table-hover w-auto table-fixed table-timeslot-show">
+          <thead>
+            <tr class="text-green h5 text-bold">
+              <td>Id</td>
+              <td>Prénom</td>
+              <td>Nom</td>
+              <td>Téléphone</td>
+              <td>E-mail</td>
+              <td>Dernière résa</td>
+              <td>Fréquence</td>
+            </tr>
+          </thead>
+          <tbody>
+          <% @clients.each do |client| %>
+            <tr>
+              <td><%= client.id %></td>
+              <td><%= client.first_name %></td>
+              <td><%= client.last_name %></td>
+              <td><%= client.phone_number %></td>
+              <td><%= client.email %></td>
+              <td><%=  %></td>
+              <td><%= %></td>
+            </tr>
+          </tbody>
+        <% end %>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

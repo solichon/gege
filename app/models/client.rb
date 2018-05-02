@@ -1,4 +1,5 @@
 class Client < ApplicationRecord
+  belongs_to :user
   has_many :bookings, dependent: :nullify # custom TBD for archive
 
   validates :first_name, presence: true
