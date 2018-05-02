@@ -1,0 +1,40 @@
+<div class="row">
+  <h3 class="text-center text-green activity mb+">Votre client n°<%= @client.id %> en détail</h3>
+  <div class="col-md-6 mt+">
+    <ul class="list-group">
+       <li class="list-group-item"> <h5 class="detail-activity"><strong><span class="glyphicon glyphicon-user mr"></span> <strong> Prénom </strong></h5><%= @client.first_name %></li>
+        <li class="list-group-item"><h5 class="detail-activity"><span class="glyphicon glyphicon-list mr"></span> <strong> Nom </strong></h5><%= @client.last_name %></li>
+        <li class="list-group-item"><h5 class="detail-activity"><strong><span class="glyphicon glyphicon-phone mr"></span> Téléphone </strong></h5><%= @client.phone_number %></li>
+        <li class="list-group-item"><h5 class="detail-activity"><strong> <span class="glyphicon glyphicon-inbox mr"></span> E-mail </strong></h5><%= @client.email %></li>
+    </ul>
+  </div>
+      <div class="row">
+        <div class="col-xs-offset-2 col-xs-4">
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="col-xs-offset-2 col-xs-4 mb">
+          <div class="text-center">
+              <%= link_to "Modifier", edit_client_path(@client), class: "btn btn-primary btn-block" %>
+          </div>
+        </div>
+        <div class="col-xs-offset-2 col-xs-4 mb">
+          <div class="text-center">
+            <%= link_to "Supprimer", client_path(@client), method: :delete, data: {confirm: "Êtes-vous certain de vouloir supprimer?"}, class: "btn btn-primary btn-block" %>
+          </div>
+        </div>
+        <div class="col-xs-offset-2 col-xs-4 mb">
+          <div class="text-center">
+              <%= link_to "Retour", clients_path, class: "btn btn-primary btn-block" %>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+

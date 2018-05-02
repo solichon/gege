@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   ActiveAdmin.routes(self)
   devise_for :users
 
@@ -8,7 +9,8 @@ Rails.application.routes.draw do
   get "about", to: "pages#about"
 
   resources :activities, only: [ :index, :show, :new, :create, :edit, :update, :destroy]
+  resources :clients, only: [ :index, :show, :new, :create, :edit, :update, :destroy]
   resources :timeslots, only: [ :index, :show, :new, :create ] do
-    resources :bookings, only: [ :new, :create ]
+    resources :bookings, only: [ :new, :create]
   end
 end
