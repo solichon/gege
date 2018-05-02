@@ -186,8 +186,8 @@ math = User.create!(
   company_name: "Math Kite Marseille",
   SIRET: "12345678901245",
   first_name: "Math",
-  last_name: "Bonpere",
-  phone_number: "+33 6 16 74 18 21",
+  last_name: "Perebon",
+  phone_number: "+33 6 16 74 35 22",
   email: "hello@gege.io",
   password: "password",
   website: "www.math-kite-marseille.com",
@@ -264,6 +264,7 @@ puts "Creating timeslots seeds for initiation"
             last_name: Faker::Name.last_name,
             phone_number: "06 14 38 19 30",
             email: Faker::Internet.email,
+            user_id: 3,
           )
           puts "done clients seeds #{k + 1}"
         puts "Creating booking seeds"
@@ -306,6 +307,7 @@ puts "Creating timeslots seeds for initiation"
             last_name: Faker::Name.last_name,
             phone_number: "06 #{13 * (k+1)} #{24 * (k+1)} #{33 * (k+1)} #{19 * (k+1)}",
             email: Faker::Internet.email,
+            user_id: 3,
           )
           puts "done clients seeds #{k + 1}"
         puts "Creating booking seeds"
@@ -348,6 +350,7 @@ puts "Creating timeslots seeds for initiation"
             last_name: Faker::Name.last_name,
             phone_number: "06 #{22 * (k+1)} #{49 * (k+1)} #{14 * (k+1)} #{32 * (k+1)}",
             email: Faker::Internet.email,
+            user_id: 3,
           )
           puts "done clients seeds #{k + 1}"
         puts "Creating booking seeds"
@@ -390,6 +393,7 @@ puts "Creating timeslots seeds for initiation"
             last_name: Faker::Name.last_name,
             phone_number: "06 #{18 * (k+1)} #{41 * (k+1)} #{49 * (k+1)} #{37 * (k+1)}",
             email: Faker::Internet.email,
+            user_id: 3,
           )
           puts "done clients seeds #{k + 1}"
         puts "Creating booking seeds"
@@ -432,6 +436,7 @@ puts "Creating timeslots seeds for initiation"
             last_name: Faker::Name.last_name,
             phone_number: "06 #{48 * (k+1)} #{29 * (k+1)} #{11 * (k+1)} #{28 * (k+1)}",
             email: Faker::Internet.email,
+            user_id: 3,
           )
           puts "done clients seeds #{k + 1}"
         puts "Creating booking seeds"
@@ -473,6 +478,7 @@ puts "Creating timeslots seeds for initiation"
             last_name: Faker::Name.last_name,
             phone_number: "06 49 37 41 28",
             email: Faker::Internet.email,
+            user_id: 3,
           )
           puts "done clients seeds 1"
         puts "Creating booking seeds"
@@ -497,6 +503,7 @@ puts "Creating timeslots seeds for initiation"
             last_name: Faker::Name.last_name,
             phone_number: "06 27 44 19 20",
             email: Faker::Internet.email,
+            user_id: 3,
           )
           puts "done clients seeds 2"
         puts "Creating booking seeds"
@@ -536,6 +543,7 @@ puts "Creating timeslots seeds for perfectionnement.title"
             last_name: Faker::Name.last_name,
             phone_number: "06 #{19 * (k+1)} #{28 * (k+1)} #{41 * (k+1)} #{27 * (k+1)}",
             email: Faker::Internet.email,
+            user_id: 3,
           )
           puts "done clients seeds #{k + 1}"
         puts "Creating booking seeds"
@@ -575,6 +583,7 @@ puts "Creating timeslots seeds for perfectionnement.title"
             last_name: Faker::Name.last_name,
             phone_number: "06 #{11 * (k+1)} #{26 * (k+1)} #{42 * (k+1)} #{39 * (k+1)}",
             email: Faker::Internet.email,
+            user_id: 3,
           )
           puts "done clients seeds #{k + 1}"
         puts "Creating booking seeds"
@@ -614,6 +623,7 @@ puts "Creating timeslots seeds for perfectionnement.title"
             last_name: Faker::Name.last_name,
             phone_number: "06 #{11 * (k+1)} #{28 * (k+1)} #{31 * (k+1)} #{47 * (k+1)}",
             email: Faker::Internet.email,
+            user_id: 3,
           )
           puts "done clients seeds #{k + 1}"
         puts "Creating booking seeds"
@@ -653,6 +663,7 @@ puts "Creating timeslots seeds for perfectionnement.title"
             last_name: Faker::Name.last_name,
             phone_number: "06 #{41 * (k+1)} #{27 * (k+1)} #{45 * (k+1)} #{15 * (k+1)}",
             email: Faker::Internet.email,
+            user_id: 3,
           )
           puts "done clients seeds #{k + 1}"
         puts "Creating booking seeds"
@@ -692,6 +703,7 @@ puts "Creating timeslots seeds for perfectionnement.title"
             last_name: Faker::Name.last_name,
             phone_number: "06 #{15 * (k+1)} #{41 * (k+1)} #{28 * (k+1)} #{39 * (k+1)}",
             email: Faker::Internet.email,
+            user_id: 3
           )
           puts "done clients seeds #{k + 1}"
         puts "Creating booking seeds"
@@ -734,6 +746,7 @@ puts "Creating timeslots seeds for cours_particuliers"
             last_name: Faker::Name.last_name,
             phone_number: "06 13 08 41 23",
             email: Faker::Internet.email,
+            user_id: 3
           )
           puts "done clients seeds #{k + 1}"
         puts "Creating booking seeds"
@@ -773,6 +786,7 @@ puts "Creating timeslots seeds for cours_particuliers"
             last_name: Faker::Name.last_name,
             phone_number: "06 #{16 * (k+1)} #{02 * (k+1)} #{19 * (k+1)} #{20 * (k+1)}",
             email: Faker::Internet.email,
+            user_id: 3
           )
           puts "done clients seeds #{k + 1}"
         puts "Creating booking seeds"
@@ -812,6 +826,7 @@ puts "Creating timeslots seeds for cours_particuliers"
             last_name: Faker::Name.last_name,
             phone_number: "06 #{14 * (k+1)} #{35 * (k+1)} #{39 * (k+1)} #{03 * (k+1)}",
             email: Faker::Internet.email,
+            user_id: 3,
           )
           puts "done clients seeds #{k + 1}"
         puts "Creating booking seeds"
@@ -851,6 +866,7 @@ puts "Creating timeslots seeds for cours_particuliers"
             last_name: Faker::Name.last_name,
             phone_number: "06 #{45 * (k+1)} #{01 * (k+1)} #{39 * (k+1)} #{36 * (k+1)}",
             email: Faker::Internet.email,
+            user_id: 3,
           )
           puts "done clients seeds #{k + 1}"
         puts "Creating booking seeds"
@@ -890,6 +906,7 @@ puts "Creating timeslots seeds for cours_particuliers"
             last_name: Faker::Name.last_name,
             phone_number: "06 39 58 37 02",
             email: Faker::Internet.email,
+            user_id: 3,
           )
           puts "done clients seeds #{k + 1}"
         puts "Creating booking seeds"
@@ -918,9 +935,10 @@ puts "Creating timeslots seeds for cours_particuliers"
 
 morgan = Client.create!(
   first_name: "Morgan",
-  last_name: "Di Via",
-  phone_number: "06 33 92 60 98",
-  email: "morgan.divia@lewagon.org",
+  last_name: "De Vio",
+  phone_number: "06 33 92 60 65",
+  email: "morgan.divio@wagon.org",
+  user_id: 3,
   )
 start_datetime = Time.new(2018, 02, 26, 10, 00)
 timeslot_init = Timeslot.create!(
